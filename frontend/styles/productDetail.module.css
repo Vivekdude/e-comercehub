@@ -1,0 +1,110 @@
+.container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.gallery {
+  flex: 1;
+}
+
+.mainImageWrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+}
+
+.mainImage {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.mainImage:hover {
+  transform: scale(1.2);
+}
+
+.thumbnails {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.details {
+  flex: 1;
+}
+
+.title {
+  margin: 0 0 1rem;
+}
+
+.rating {
+  margin-bottom: 1rem;
+}
+
+.star {
+  color: #ff9f00;
+  margin-right: 2px;
+}
+
+.priceBlock {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.originalPrice {
+  text-decoration: line-through;
+  color: #878787;
+  font-size: 1rem;
+}
+
+.discountBadge {
+  background-color: #388e3c;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.description {
+  margin-bottom: 1.5rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.addToCart {
+  background-color: #ff9f00;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buyNow {
+  background-color: #fb641b;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
