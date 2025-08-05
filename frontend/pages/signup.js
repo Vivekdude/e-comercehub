@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "../styles/auth.module.css";
 
 export default function Signup() {
   const [name, setName] = useState("");
@@ -21,27 +22,34 @@ export default function Signup() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h1>Signup</h1>
-      <input
-        type="text"
-        placeholder="Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <input
-        type="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <button type="submit">Signup</button>
-    </form>
+    <div className={styles.container}>
+      <form className={styles.card} onSubmit={handleSubmit}>
+        <h1>Signup</h1>
+        <input
+          type="text"
+          placeholder="Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          className={styles.input}
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className={styles.input}
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          className={styles.input}
+        />
+        <button type="submit" className={styles.button}>
+          Signup
+        </button>
+      </form>
+    </div>
   );
 }

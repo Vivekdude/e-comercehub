@@ -1,0 +1,56 @@
+.container {
+  padding: 2rem;
+  background: #f1f3f6;
+  min-height: 100vh;
+}
+
+.cartTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.cartTable th {
+  background: #2874f0;
+  color: #fff;
+  text-align: left;
+}
+
+.cartTable th,
+.cartTable td {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.productCell {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.thumb {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.quantityInput {
+  width: 60px;
+  padding: 0.25rem;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  color: #2874f0;
+  cursor: pointer;
+}
+
+.summary {
+  margin-top: 2rem;
+  text-align: right;
+  background: #fff;
+  padding: 1rem 2rem;
+  border: 1px solid #e0e0e0;
+  display: inline-block;
+}
