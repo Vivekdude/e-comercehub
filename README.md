@@ -38,3 +38,30 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 This directory contains example API routes for the headless API app.
 
 For more details, see [route.js file convention](https://nextjs.org/docs/app/api-reference/file-conventions/route).
+
+# E-Commerce App
+
+## Project Structure
+
+```
+ecommerce-app/
+│
+├── frontend/            # React.js / Next.js App
+│   ├── pages/           # Routing
+│   ├── components/      # Reusable UI elements
+│   ├── public/          # Static assets (images, icons)
+│   ├── styles/          # CSS or Tailwind
+│   └── utils/           # API calls
+│
+├── backend/             # Node.js + Express API
+│   ├── controllers/     # Business logic
+│   ├── models/          # Mongoose schemas
+│   ├── routes/          # API routes
+│   ├── middlewares/     # Auth, error handling
+│   └── config/          # DB, environment settings
+│
+├── .env                 # Environment variables
+└── README.md
+```
+
+This structure ensures a clean separation of concerns between the frontend and backend.
